@@ -12,7 +12,12 @@ const getDistanceFromLine = (
     const d3 = getDistance(lineStart, lineEnd);
 
     // alpha is the angle between the line from start to point, and from start to end
-    const alpha = Math.acos((d1 * d1 + d3 * d3 - d2 * d2) / (2 * d1 * d3));
+    let acosArg = (d1 * d1 + d3 * d3 - d2 * d2) / (2 * d1 * d3);
+    if (acosArg < -1 || acosArg > 1) {
+        acosArg = Math.round(acosArg);
+    }
+
+    const alpha = Math.acos(acosArg);
 
     // beta is the angle between the line from end to point and from end to start //
     const beta = Math.acos((d2 * d2 + d3 * d3 - d1 * d1) / (2 * d2 * d3));
