@@ -1,6 +1,6 @@
 {
   "name": "@nebulae/geolib",
-  "version": "3.2.2",
+  "version": "3.2.3",
   "description": "",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -11,14 +11,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/manuelbieh/geolib.git"
+    "url": "git+https://github.com/NebulaEngineering/geolib.git"
   },
-  "author": "Manuel Bieh",
+  "author": "Nebula",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/manuelbieh/geolib/issues"
+    "url": "https://github.com/NebulaEngineering/geolib/issues"
   },
-  "homepage": "https://github.com/manuelbieh/geolib#readme",
+  "homepage": "https://github.com/NebulaEngineering/geolib#readme",
   "scripts": {
     "babel": "babel",
     "build": "yarn clean && yarn build:es && yarn build:types && yarn build:umd",
